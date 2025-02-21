@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
+    const form = document.querySelector("#login-form"); // Acessa o formulário pelo ID
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Impede o envio do formulário
@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const senhaCorreta = "123";
 
         // Obtém valores dos campos
-        const emailDigitado = form.querySelector('input[type="email"]').value;
-        const senhaDigitada = form.querySelector('input[type="password"]').value;
+        const emailDigitado = document.querySelector("#email").value; // Acessa o campo de e-mail pelo ID
+        const senhaDigitada = document.querySelector("#senha").value; // Acessa o campo de senha pelo ID
 
         // Verifica credenciais
         if (emailDigitado === emailCorreto && senhaDigitada === senhaCorreta) {
