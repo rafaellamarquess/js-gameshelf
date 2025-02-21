@@ -28,4 +28,4 @@
 - **APIs Externas**: RAWG API, IGDB API
 
 
-Acesse o projeto no navegador em `https://gameshelf-jade.vercel.app/index.html`.
+Acesse o projeto no navegador em `https://gameshelf-jade.vercel.app/`.
