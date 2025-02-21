@@ -49,6 +49,13 @@ header input {
     border-radius: 10px 10px 0 0;
 }
 
+.fixed-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .rating {
     position: absolute;
     top: 10px;
@@ -97,10 +104,23 @@ header input {
 }
 
 
+@media (max-width: 976px) {
+    .fixed-img {
+        height: 180px;
+    }
+}
 
+@media (max-width: 768px) {
+    .fixed-img {
+        height: 150px;
+    }
+}
 
-
-
+@media (max-width: 576px) {
+    .fixed-img {
+        height: 120px;
+    }
+}
 
 @media (max-width: 991px) {
     #sidebar {

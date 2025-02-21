@@ -10,37 +10,59 @@
     </head>
     <body>
     
-    <header class="d-flex justify-content-between align-items-center p-3 bg-dark text-light">
-        <a href="index.html" class="text-decoration-none text-light">
-            <h2 class="m-0">GameShelf</h2>
-        </a>
-        <input type="text" class="form-control w-25" placeholder="Search for games">
-        <div>
-            <a href="login.html" class="btn btn-pink">Login</a>
-            <a href="signup.html" class="btn btn-pink">Sign up</a>
-        </div>
-    </header>
+        <header class="bg-dark text-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h2 class="m-0">GameShelf</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center">
+                            <form class="d-flex ms-auto">
+                                <input class="form-control w-100 me-5"" type="search" placeholder="Search for games" aria-label="Search">
+                            </form>
+                            <li class="nav-item">
+                                <a href="login.html" class="btn btn-pink nav-link me-3">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="signup.html" class="btn btn-pink nav-link me-3">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
     
-    <div class="d-flex">
-        <nav id="sidebar" class="bg-dark text-light p-3">
-            <h3><a href="index.html" class="text-light text-decoration-none">Home</a></h3>
-            <h3><a href="reviews.html" class="text-light text-decoration-none">Reviews</a></h3>
-            <h3><a href="wishlist.html" class="text-light text-decoration-none">Wishlist</a></h3>
-            <h3><a href="library.html" class="text-light text-decoration-none">My library</a></h3>
-            <h3><a href="followers.html" class="text-light text-decoration-none">People you follow</a></h3>
-            <h3><a href="new-releases.html" class="text-light text-decoration-none">New Releases</a></h3>
-            <h3><a href="last-30-days.html" class="text-light text-decoration-none">Last 30 days</a></h3>
-            <h3><a href="this-week.html" class="text-light text-decoration-none">This week</a></h3>
-            <h3><a href="next-week.html" class="text-light text-decoration-none">Next week</a></h3>
-            <h3><a href="release-calendar.html" class="text-light text-decoration-none">Release calendar</a></h3>
-            <h3><a href="top.html" class="text-light text-decoration-none">Top</a></h3>
-            <h3><a href="best-of-year.html" class="text-light text-decoration-none">Best of the year</a></h3>
-            <h3><a href="popular-2020.html" class="text-light text-decoration-none">Popular in 2020</a></h3>
-            <h3><a href="top-250.html" class="text-light text-decoration-none">All time top 250</a></h3>
-            <h3><a href="all-games.html" class="text-light text-decoration-none">All Games</a></h3>
-        </nav>
-    </div>
-    
+
+        <section>
+            <div class="d-flex">
+                <button class="btn btn-dark d-lg-none mb-3 w-100 text-center" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                    <span class="navbar-toggler-icon">Menu</span>
+                </button>
+            </div>
+                <div id="sidebar" class="bg-dark text-light p-3 collapse d-lg-block">
+                    <h3><a href="index.html" class="text-light text-decoration-none">Home</a></h3>
+                    <h3><a href="perfil.html" class="text-light text-decoration-none">Seu Perfil</a></h3>
+                    <h3><a href="reviews.html" class="text-light text-decoration-none">Reviews</a></h3>
+                    <h3><a href="wishlist.html" class="text-light text-decoration-none">Wishlist</a></h3>
+                    <h3><a href="library.html" class="text-light text-decoration-none">My library</a></h3>
+                    <h3><a href="followers.html" class="text-light text-decoration-none">People you follow</a></h3>
+                    <h3><a href="new-releases.html" class="text-light text-decoration-none">New Releases</a></h3>
+                    <h3><a href="last-30-days.html" class="text-light text-decoration-none">Last 30 days</a></h3>
+                    <h3><a href="this-week.html" class="text-light text-decoration-none">This week</a></h3>
+                    <h3><a href="next-week.html" class="text-light text-decoration-none">Next week</a></h3>
+                    <h3><a href="release-calendar.html" class="text-light text-decoration-none">Release calendar</a></h3>
+                    <h3><a href="best-of-year.html" class="text-light text-decoration-none">Best of the year</a></h3>
+                    <h3><a href="popular-2025.html" class="text-light text-decoration-none">Popular in 2025</a></h3>
+                    <h3><a href="all-games.html" class="text-light text-decoration-none">All Games</a></h3>
+                </div>
+        </section>
+       
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card p-4 shadow-lg register-container">
             <h2 class="text-center mb-3">Cadastro</h2>
